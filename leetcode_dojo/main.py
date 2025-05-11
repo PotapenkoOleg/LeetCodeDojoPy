@@ -1039,6 +1039,15 @@ def named_params(*, a, b):
 
 x_2 = named_params(a=1, b=2)
 
+# Convert characters to ASCII numbers
+x = 'x'
+z = 'z'
+
+ascii_x = ord(x)  # ASCII value of 'x'
+ascii_z = ord(z)  # ASCII value of 'z'
+
+difference = ascii_z - ascii_x 
+
 if __name__ == '__main__':
     functions_scope()
     walrus_operator()

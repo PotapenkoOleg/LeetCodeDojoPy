@@ -4,7 +4,7 @@
 from typing import List
 
 
-# [4,3,0,0,0,5,0,7, 9,99]
+# [4,3,0,0,0,5,0,7,9,99]
 
 
 class Solution:
