@@ -10,3 +10,5 @@ def build_prefix_sum(arr):
 # or alternatively prefix[j] - prefix[i] + nums[i] if you don't want to deal with the out of bounds case when i = 0.
 
 # prefix[j] - prefix[i] + nums[i]
+
+# We MUST initialize our hash map with 0: 1, considering the empty prefix
