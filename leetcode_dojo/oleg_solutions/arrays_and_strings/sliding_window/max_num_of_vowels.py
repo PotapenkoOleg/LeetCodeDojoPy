@@ -7,16 +7,13 @@ class Solution:
         cur = 0
         for i in range(k):
             if s[i] in vowels:
-                cur+=1
+                cur += 1
         ans = cur
         length = len(s)
-        for i in range(k,length):
+        for i in range(k, length):
             if s[i] in vowels:
-                cur+=1
-            if s[i-k] in vowels:
-                cur-=1
+                cur += 1
+            if s[i - k] in vowels:
+                cur -= 1
             ans = max(ans, cur)
         return ans
-            
-        
-        

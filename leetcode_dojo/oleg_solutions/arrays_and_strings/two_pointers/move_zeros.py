@@ -4,9 +4,6 @@
 from typing import List
 
 
-# [4,3,0,0,0,5,0,7,9,99]
-
-
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """

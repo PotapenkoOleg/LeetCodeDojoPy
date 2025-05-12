@@ -11,10 +11,9 @@ class Solution:
         ans = inf
         for right in range(len(nums)):
             cur += nums[right]
-            while(cur >= target):
-                lenght = right-left+1
+            while (cur >= target):
+                lenght = right - left + 1
                 ans = min(ans, lenght)
                 cur -= nums[left]
                 left += 1
         return 0 if ans == inf else ans
-
