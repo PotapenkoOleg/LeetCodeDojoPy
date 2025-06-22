@@ -544,6 +544,9 @@ def sets():
 
     s = {1, 2, 3, 4, 5}
     t = {4, 5, 6, 7, 8, 9}
+    
+    # Check if Sets are equal
+    eq = s == t
 
     # Union of s and t
     s1 = s & t
@@ -808,6 +811,21 @@ def counter_class():
     for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:
         cnt[word] += 1
     # Counter({'blue': 3, 'red': 2, 'green': 1})
+    
+    # Comare two Counters
+    c1 = Counter('aabbc')
+    c2 = Counter({'a': 2, 'b': 2, 'c': 1})
+
+    are_equal = c1 == c2  # True
+    
+    del(c1['c'])
+    print(c1)
+    
+    c2['c'] -= 1
+    print(c2)
+    
+    are_equal = c1 == c2  # True
+    print(are_equal)
 
     # Elements are counted from an iterable or initialized from another mapping (or counter)
     c = Counter()  # a new, empty counter
