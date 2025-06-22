@@ -1,4 +1,4 @@
-# Asteroid Collision
+# 735. Asteroid Collision
 # https://leetcode.com/problems/asteroid-collision/description/
 
 from typing import List
