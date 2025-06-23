@@ -4,7 +4,7 @@
 # Definition for singly-linked list.
 from typing import Optional
 
-from oleg_solutions.linked_lists.list_node import ListNode
+from oleg_solutions.linked_lists.helpers.list_node import ListNode
 
 
         
