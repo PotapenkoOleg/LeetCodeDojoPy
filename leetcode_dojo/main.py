@@ -2,7 +2,7 @@ import collections
 import heapq
 import math
 
-from heapq import *
+from heapq import * # type: ignore
 from functools import cache
 
 k = 42
@@ -1005,7 +1005,7 @@ class Account:
     def from_xml(cls, data):
         from xml.etree.ElementTree import XML
         doc = XML(data)
-        return cls(doc.findtext('owner'), float(doc.findtext('amount')))
+        return cls(doc.findtext('owner'), doc.findtext('amount'))
 
     @property
     def owner2(self):
@@ -1066,6 +1066,16 @@ ascii_z = ord(z)  # ASCII value of 'z'
 
 difference = ascii_z - ascii_x 
 
+def compare_obj_addresses():
+    # You can compare the addresses (identities) of two objects in Python using the built-in `id()` function or the `is` operator:
+    a = object()
+    b = object()
+    same_address = id(a) == id(b)  # False
+    # Or, more idiomatically:
+    same_object = a is b  # False
+    #Both `id(a) == id(b)` and `a is b` check if `a` and `b` refer to the exact same object in memory.
+    
+
 if __name__ == '__main__':
     functions_scope()
     walrus_operator()
@@ -1093,3 +1103,4 @@ if __name__ == '__main__':
     type_annotations()
     dp_with_cache([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     zip_lists()
+    compare_obj_addresses()

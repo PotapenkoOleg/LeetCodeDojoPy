@@ -15,6 +15,15 @@ class Helper():
         return head
     
     @classmethod
+    def get_node_by_value(cls, head, val):
+        curr = head
+        while curr:
+            if curr.val == val:
+                return curr
+            curr = curr.next
+        return None
+        
+    @classmethod
     def print_linked_list(cls, head):
             if not head:
                 return
