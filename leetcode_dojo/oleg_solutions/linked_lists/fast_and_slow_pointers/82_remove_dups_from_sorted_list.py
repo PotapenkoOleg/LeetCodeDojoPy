@@ -31,6 +31,6 @@ class Solution:
 
 solution = Solution()
 
-head = Helper.list_to_linked_list([1,2,3,3,4,4,5])
+head = Helper.to_linked_list([1,2,3,3,4,4,5])
 head = solution.deleteDuplicates(head)
 Helper.print_linked_list(head)

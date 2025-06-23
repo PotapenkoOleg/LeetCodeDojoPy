@@ -2,7 +2,7 @@ from oleg_solutions.linked_lists.helpers.list_node import ListNode
 
 class Helper():
     @classmethod
-    def list_to_linked_list(cls, nums):
+    def to_linked_list(cls, nums):
         prev = None
         head = None
         for num in nums:
