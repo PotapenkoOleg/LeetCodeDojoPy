@@ -1075,6 +1075,10 @@ def compare_obj_addresses():
     same_object = a is b  # False
     #Both `id(a) == id(b)` and `a is b` check if `a` and `b` refer to the exact same object in memory.
     
+def list_init(n):
+    ans = [float("inf")] * n
+    print(ans)
+    
 
 if __name__ == '__main__':
     functions_scope()
@@ -1104,3 +1108,4 @@ if __name__ == '__main__':
     dp_with_cache([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     zip_lists()
     compare_obj_addresses()
+    list_init(10)
