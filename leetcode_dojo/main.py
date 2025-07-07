@@ -1032,6 +1032,10 @@ class SuperAccount(Account):
 def zip_lists():
     letters = ['a', 'b', 'c']
     nums = [1, 2, 3]
+    
+    p = zip(letters, nums)
+    for pe in p:
+        print(pe)
 
     for letter, num in zip(letters, nums):
         print("{}: {}".format(letter, num))
